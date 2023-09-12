@@ -542,4 +542,5 @@ This exporter supports the multi-target pattern. This allows running a single in
 
 To use the multi-target functionality, send a http request to the endpoint `/scrape?target=foo:1521` where target is set to the DSN of the Oracle instance to scrape metrics from.
 #   O r a c l e _ D B _ E x p o r t e r  
+ #   O r a c l e _ D B _ E x p o r t e r  
  

@@ -12,7 +12,8 @@ ENV VERSION ${VERSION:-0.1.0}
 RUN GOOS=linux GOARCH=amd64 go build -v -ldflags "-X main.Version=${VERSION} -s -w"
 
 FROM ${BASE_IMAGE} as exporter
-LABEL org.opencontainers.image.authors="Seth Miller,Yannig Perré <yannig.perre@gmail.com>"
+# LABEL org.opencontainers.image.authors="Seth Miller,Yannig Perré <yannig.perre@gmail.com>"
+LABEL org.opencontainers.image.authors="Nguyen Ngoc Huy <elvizhuy@gmail.com>"
 LABEL org.opencontainers.image.description="Oracle DB Exporter"
 
 ENV VERSION ${VERSION:-0.1.0}
